@@ -1,0 +1,24 @@
+
+.card-row {
+  padding: 30px 0;
+
+  .card {
+    overflow: hidden;
+
+    img {
+      transition: ease-out 0.2s;
+
+      &:hover {
+        transform: scale(1.1);
+        overflow: hidden;
+      }
+    }
+
+    .card-content{
+        padding: 10px;
+
+    }
+
+  }
+
+}

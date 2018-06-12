@@ -1,0 +1,18 @@
+.statement {
+  background-size: cover;
+  background-attachment: fixed;
+
+  padding: 7rem 0;
+
+  .statement-text-area {
+
+    h2 {
+      font-size: 5rem;
+    }
+
+    hr {
+      color: white;
+      width: 100%;
+    }
+  }
+}

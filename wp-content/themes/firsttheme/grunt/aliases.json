@@ -1,0 +1,25 @@
+{
+  "default": [
+        "concurrent:phase1",
+        "concurrent:phase2",
+        "jshint",
+        "concurrent:phase3",
+        "concurrent:phase4",
+        "concurrent:phase5",
+        "notify:initial"
+  ],
+  "build": [
+        "concurrent:phase1",
+        "concurrent:phase2",
+        "jshint",
+        "concurrent:phase3",
+        "concurrent:phase4",
+        "concurrent:phase5",
+        "notify:project",
+        "browserSync",
+        "watch"
+  ],
+    "backup": [
+    "shell"
+  ]
+}

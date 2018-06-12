@@ -1,0 +1,9 @@
+{
+	"version": 3,
+	"file": "gallery.css",
+	"sources": [
+		"../../../scss/modules/gallery.scss"
+	],
+	"names": [],
+	"mappings": "AACA,AAME,SANO,CAET,YAAY,CAEV,KAAK,CAEL,GAAG,CAAC;EACF,KAAK,EAAE,IAAI,GACZ"
+}

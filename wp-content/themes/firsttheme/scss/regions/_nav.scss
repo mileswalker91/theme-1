@@ -1,0 +1,30 @@
+.navbar {
+  padding: 10px;
+
+  //logo
+  .navbar-brand {
+    max-width: 250px;
+    img {
+      width: 100%;
+    }
+  }
+
+  .dropdown-menu {
+    margin-top: 22px;
+    width: 100%;
+    background-color: black;
+
+    a {
+      color: white;
+    }
+  }
+
+}
+
+.dark-nav{
+  background-color: #0e0e0e !important;
+}
+
+.navbar-margin-top {
+  margin-top: 35px;
+}
