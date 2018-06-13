@@ -170,7 +170,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .social-banner {
   background: #007bff;
-  padding: 20px 0; }
+  padding: 20px 0 10px 0; }
   .social-banner .social-text {
     text-align: left; }
     .social-banner .social-text p {
@@ -183,7 +183,21 @@ h1, h2, h3, h4, h5, h6 {
       font-size: 20px;
       vertical-align: middle;
       color: white;
-      margin: 5px 15px; }
+      margin: 5px 15px;
+      transition: ease-in-out 0.5s; }
+      .social-banner .social-icons .svg-inline--fa:hover {
+        transform: rotate(24deg);
+        color: black; }
+
+.footer {
+  background: #000000;
+  padding: 40px 20px; }
+  .footer .col-md-2, .footer .col-md-4 {
+    text-align: center;
+    vertical-align: middle; }
+  .footer .footer-logo img {
+    width: 100%;
+    opacity: 0.5; }
 
 .navbar {
   padding: 10px; }
