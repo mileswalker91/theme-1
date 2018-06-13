@@ -1,0 +1,27 @@
+.social-banner {
+  background: #007bff;
+  padding: 20px 0;
+
+  .social-text {
+    text-align: left;
+      p {
+        font-size: 18px;
+        color: white;
+        vertical-align: middle;
+      }
+    }
+
+  .social-icons {
+
+    text-align: right;
+
+      .svg-inline--fa {
+    font-size: 20px;
+    vertical-align: middle;
+    color: white;
+    margin: 5px 15px;
+
+    }
+  }
+
+}

@@ -93,3 +93,14 @@ function custom_styles() {
 	wp_enqueue_style( 'site', get_stylesheet_directory_uri() . '/css/site.min.css' );
 
 }
+
+add_action('wp_enqueue_scripts','enqueue_our_required_stylesheets');
+//enqueues our external font awesome stylesheet
+function enqueue_our_required_stylesheets(){
+	wp_enqueue_style('font-awesome', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
+}
+
+//Enqueue Fontawesome
+wp_register_script( 'FontAwesome', 'https://use.fontawesome.com/releases/v5.0.2/js/all.js', null, null, true );
+wp_enqueue_script('FontAwesome');

@@ -168,6 +168,23 @@ h1, h2, h3, h4, h5, h6 {
 .carousel .slick-slide .item img {
   width: 100%; }
 
+.social-banner {
+  background: #007bff;
+  padding: 20px 0; }
+  .social-banner .social-text {
+    text-align: left; }
+    .social-banner .social-text p {
+      font-size: 18px;
+      color: white;
+      vertical-align: middle; }
+  .social-banner .social-icons {
+    text-align: right; }
+    .social-banner .social-icons .svg-inline--fa {
+      font-size: 20px;
+      vertical-align: middle;
+      color: white;
+      margin: 5px 15px; }
+
 .navbar {
   padding: 10px; }
   .navbar .navbar-brand {
