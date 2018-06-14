@@ -8,15 +8,24 @@
 
 .btn {
 
-  background: #007bff;
+  background: $primary-color;
   transition: ease-in-out 0.3s;
+  border: solid 1px $primary-shade;
 
   &:hover {
-    background: #007bff;
+    background: $primary-shade;
     transform: rotate(3deg);
     -webkit-box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.32);
     -moz-box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.32);
     box-shadow: 0px 10px 8px -5px rgba(0,0,0,0.32);
 
+  }
+}
+
+a {
+  color: $primary-color;
+
+  &:hover {
+    text-decoration: none;
   }
 }

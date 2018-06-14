@@ -1,12 +1,12 @@
 .social-banner {
-  background: #007bff;
+  background: $primary-color;
   padding: 20px 0 10px 0;
 
   .social-text {
     text-align: left;
       p {
         font-size: 18px;
-        color: white;
+        color: $white;
         vertical-align: middle;
       }
     }
@@ -18,13 +18,13 @@
       .svg-inline--fa {
     font-size: 20px;
     vertical-align: middle;
-    color: white;
+    color: $white;
     margin: 5px 15px;
     transition: ease-in-out 0.5s;
 
     &:hover {
       transform: rotate(24deg);
-      color: black;
+      color: $black;
     }
 
     }
@@ -36,6 +36,14 @@
 background: #000000;
 padding: 40px 20px;
 
+  p{
+    color: $white;
+  }
+
+  a {
+    color: $primary-color;
+  }
+
     .col-md-2, .col-md-4 {
       text-align: center;
       vertical-align: middle;
@@ -44,7 +52,7 @@ padding: 40px 20px;
     .footer-logo {
 
         img {
-          width: 100%;
+          max-width: 150px;
           opacity: 0.5;
         }
     }

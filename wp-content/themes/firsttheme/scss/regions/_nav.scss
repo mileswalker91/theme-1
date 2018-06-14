@@ -12,17 +12,21 @@
   .dropdown-menu {
     margin-top: 22px;
     width: 100%;
-    background-color: black;
+    background-color: $black;
 
     a {
-      color: white;
+      color: $white;
     }
   }
 
 }
 
 .dark-nav{
-  background-color: #0e0e0e !important;
+  background-color: $black !important;
+
+  a{
+    color: $primary-color;
+  }
 }
 
 .navbar-margin-top {

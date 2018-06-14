@@ -3,10 +3,17 @@
   .pimg {
     margin: 0;
     padding: 0;
+    overflow: hidden;
 
 
     img {
       width: 100%;
+      transition: ease-in-out 3s;
+
+
+      &:hover {
+        transform: scale(2);
+      }
       }
     }
 
