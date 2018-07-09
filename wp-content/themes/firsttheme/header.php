@@ -22,8 +22,8 @@
 
 
 <body style="background-color:<?php the_field('page_background', 'option'); ?>">
-<?php get_template_part('template-parts/contact'); ?>
-	<nav class="navbar navbar-default navbar-expand-lg  fixed-top navbar-dark navbar-margin-top">
+
+	<nav class="navbar navbar-fluid navbar-expand-lg  fixed-top navbar-dark">
 
 		<a class="navbar-brand logo" href="http://wordpress.test"><img src="<?php the_field('theme_logo', 'option'); ?>" /></a>
 			<div class="navbar-header">

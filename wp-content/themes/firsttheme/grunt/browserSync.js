@@ -7,7 +7,7 @@ module.exports = {
         },
         options: {
             watchTask: true,
-            proxy: "wordpress.test",
+            proxy: "themetwo.test",
             port: 3360,
             open: true,
             notify: false,

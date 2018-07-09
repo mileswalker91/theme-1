@@ -2,6 +2,7 @@
 <?php // open the WordPress loop
 if (have_posts()) : while (have_posts()) : the_post();
 
+
 	// are there any rows within within our flexible content?
 	if( have_rows('page_builder') ):
 
@@ -25,6 +26,9 @@ if (have_posts()) : while (have_posts()) : the_post();
             if( get_row_layout() == 'jumbotron' )
         			get_template_part('template-parts/jumbotron');
 
+							if( get_row_layout() == 'jumbotron_newsletter' )
+	        			get_template_part('template-parts/jumbotron-newsletter');
+
               if( get_row_layout() == 'newsletter_signup' )
                 get_template_part('template-parts/signup');?>
 
@@ -36,9 +40,18 @@ if (have_posts()) : while (have_posts()) : the_post();
 
 
 
-								<div class="container-fluid card-row" style="background-color:<?php the_field('card_row_bg', 'option'); ?>;">
+								<div class="container-fluid card-row" style="background-color:<?php the_field('card_row_bg', 'option'); ?>; background-image: url(<?php the_field('card_row_bg_image', 'option'); ?>);">
 								<div class="container">
+									<div class="row card-row-intro">
+										<div class="col-md-6">
+									<h2 class="big-text"><?php the_field('card_row_title', 'option'); ?></h2>
+									<p><?php the_field('card_row_text', 'option'); ?></p>
+								</div>
+									</div>
+
+
 									<div class="row">
+
 
 
 
@@ -48,12 +61,10 @@ if (have_posts()) : while (have_posts()) : the_post();
 					$content = get_sub_field('info_card_content'); ?>
 
 					<div class="col-md-4 center">
-						<div class="card center" style=" background-color:<?php the_sub_field('info_background'); ?>">
+						<div class="card center" style=" background-color:<?php the_sub_field('info_background'); ?>;">
 
-							<img class="card-img-top" src="<?php the_sub_field('info_card_image'); ?>" alt="cardimg1" />
 					    <div class="card-content">
 					      <h4 class="card-title"><?php the_sub_field('info_card_title'); ?></h4>
-								<hr />
 					    <p><?php the_sub_field('info_card_content'); ?></p>
 					    <a href="<?php the_sub_field('info_card_btn_url'); ?>" class="btn btn-primary" target="none"><?php the_sub_field('info_card_btn_text'); ?></a>
 					  </div>
@@ -124,6 +135,19 @@ if( get_row_layout() == 'gallery_carousel' )
 
 		if( get_row_layout() == 'full_width_container' )
 			get_template_part('template-parts/content-blocks/full-container');
+
+			if( get_row_layout() == 'cta_section' )
+				get_template_part('template-parts/cta-section');
+
+				if( get_row_layout() == 'single_column_newsletter' )
+					get_template_part('template-parts/newsletter-signup-single');
+
+					if( get_row_layout() == 'video_popup' )
+						get_template_part('template-parts/popup-video');
+
+						if( get_row_layout() == 'hero_right' )
+							get_template_part('template-parts/hero/hero-right');
+
 
 
 

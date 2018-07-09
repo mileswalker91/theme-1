@@ -1,5 +1,15 @@
 .navbar {
-  padding: 10px;
+  padding: 10px 40px;
+  background: rgba(0,0,0, 0.2);
+  transition: ease-in-out 0.3;
+
+  li {
+    padding: 0 15px;
+
+    a {
+      letter-spacing: 1px;
+    }
+  }
 
   //logo
   .navbar-brand {
@@ -11,21 +21,40 @@
 
   .dropdown-menu {
     margin-top: 22px;
-    width: 100%;
-    background-color: $black;
+    background-color: $secondary-color;
+    border: solid 2px $white;
+    position: auto;
+
+    li {
+      padding: 0;
+
+      &:hover {
+        background: $primary-color;
+      }
 
     a {
       color: $white;
+      font-weight: 800;
     }
+   }
+
+   .dropdown-item {
+     &:hover {
+       background: $black;
+     }
+   }
   }
 
 }
 
 .dark-nav{
-  background-color: $black !important;
+  background-color: $white !important;
+  padding: 20px 0;
 
   a{
-    color: $primary-color;
+    color: $black;
+    font-weight: 400!important;
+    letter-spacing: 1px;
   }
 }
 

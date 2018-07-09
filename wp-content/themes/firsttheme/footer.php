@@ -15,7 +15,7 @@
 <div class="footer container-fluid">
   <div class="row">
 
-      <div class="col-md-2 footer-logo"><img src="http://wordpress.test/wp-content/uploads/2018/03/static1.squarespace-2.png" /></div>
+      <div class="col-md-2 footer-logo"><img src="<?php the_field('logo'); ?>" /></div>
           <div class="col-md-2"><p>Property Devlopers</p></div>
       <div class="col-md-2"><p>View Our <a href="#">Data Policy</a></p></div>
       <div class="col-md-2"><p><a href="#">Contact us</a>now</p></div>

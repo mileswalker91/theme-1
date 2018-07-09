@@ -46,3 +46,31 @@ padding: 0
     font-size: 13px;
   }
 }
+
+
+
+.fw-newsletter {
+  text-align: center;
+  padding: 100px 0;
+
+      h2, p {
+        color: $white;
+      }
+
+    .fw-form {
+      margin: 30px 0;
+
+      input {
+        width: 80%;
+        box-sizing: inherit;
+
+      }
+
+      .wpcf7-submit {
+        width: 20%;
+      }
+
+    }
+
+
+}

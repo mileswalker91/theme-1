@@ -20,7 +20,7 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'wordpress');
+define('DB_NAME', 'theme-2');
 
 /** MySQL database username */
 define('DB_USER', 'root');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
- define('AUTH_KEY',         '?2^sT{mCv?1zP2j0=4j7Z7MYcx+^PF8ZSUw3jDS?rSt/sE pfmNCl.?OlOTY9#zn');
- define('SECURE_AUTH_KEY',  '&)K4>G2)=TE7|N0mysZ<tlSf$EFe|~zDTU[nL)(<w^If>VMU,H3 hHmws[dzC=4f');
- define('LOGGED_IN_KEY',    '$E;aKuPa;!Pj/vBkWlJnu-|^P%-:b6:MkK|HOB5Es+fdi?QK}*`VU]:QL5`r`iPP');
- define('NONCE_KEY',        'SsOD!E)oOX=#qMp-nDt|sYL+w*-9iNVG(nH;*[/XHS5y{VrXs:nkWlK 7})-=KRR');
- define('AUTH_SALT',        'IXt)yl?B}tJQN2x~4H|H.[o?5?h10}4WLA 1_Zi:HiOLTHR5&a2h6T;iW}J+WRZ`');
- define('SECURE_AUTH_SALT', 'D3feZJ:F0>vi{KKh3TEw+}2}=e!|CV3xHbgwFJ)+w?Af-???.rZ9tT}J:<ax;-Bq');
- define('LOGGED_IN_SALT',   'G%>KxRF{YFs_3r-`p|[aM_+SXC@G2l?t}ZEYhd]JHQhJw1=%;B15<2jSvoQlzh^v');
- define('NONCE_SALT',       'Qm94K+u.A[guUUu9r+The[WStphgrN;n|n0o|td!W!|r=-l%|l?{ZwcIW,3M16y_');
+ define('AUTH_KEY',         'EMRp|bp,+KpXy(-5v4EHbkNKI%)grorM$]` =3Z+?9P>D*)_Q- ?,Wy!6LB|JDu>');
+define('SECURE_AUTH_KEY',  '|#{Pdnd-S?-i{@V4pI07E|o~}Op_a><5Q<HC;HU_;2VtzvP)[LRn9VMiLCi@dm^#');
+define('LOGGED_IN_KEY',    'CdaCse 0BtI& *~A>_AM};/:&8 5=X>tL5o&X8nz*&Mit*QYz&,p50{3O]+/.U7G');
+define('NONCE_KEY',        ' qwkg`v0$7mrU.mPL7s*1LOrfr9a{:?7v+gbYzWy6P^cc #EkYln9|||_N1smE:M');
+define('AUTH_SALT',        'W78Y-L^6i_+|F*y{+~eN^3;F+@b|~d+9p*%=dCiV#FMm+)ONz~KGQw-q&SM5O*D>');
+define('SECURE_AUTH_SALT', ',fAoIRZKMetxt{`5J8Qff{eDqNLe,2EK(/]6yU^OJ*/X(kxU.I]OpuvH+q5<<[Xo');
+define('LOGGED_IN_SALT',   'HI_s~y EDXsx1>_Pog$<|~3C|$3#qnZ2tgr3uKO<LY*KEk0c-(Yh2_3gZn*;f)zG');
+define('NONCE_SALT',       'yPqXYY|$X0]>Ma;FDQ[7#%ytOtKn2R^ohez=ZA_QC~71TX~=>u^cV`jh:*]96_lT');
 
 /**#@-*/
 
@@ -63,7 +63,7 @@ define('DB_COLLATE', '');
  * You can have multiple installations in one database if you give each
  * a unique prefix. Only numbers, letters, and underscores please!
  */
-$table_prefix  = 'wpmar_';
+$table_prefix  = 'themetwo_';
 
 /**
  * For developers: WordPress debugging mode.

@@ -8,10 +8,10 @@ jQuery(document).ready(function($){
       scroll_start = $(this).scrollTop();
       if(scroll_start > offset.top) {
         $('.navbar').addClass('navbar-dark dark-nav');
-        $('.navbar').removeClass('navbar-dark navbar-margin-top');
+        $('.navbar').removeClass('navbar-dark');
        } else {
          $('.navbar').removeClass('navbar-dark dark-nav');
-         $('.navbar').addClass('navbar-dark navbar-margin-top');
+         $('.navbar').addClass('navbar-dark');
        }
    });
     }

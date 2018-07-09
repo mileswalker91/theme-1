@@ -1,4 +1,4 @@
-<div class="container-fluid two-column-content" style="background-color:<?php the_sub_field('two_column_bg'); ?>;">
+<div class="container-fluid two-column-content" style="background-color:<?php the_sub_field('two_column_bg'); ?>; background-image:url(<?php the_sub_field('two_column_bg_image'); ?>);">
 <div class="container three-columns content-block">
 <div class="row">
 

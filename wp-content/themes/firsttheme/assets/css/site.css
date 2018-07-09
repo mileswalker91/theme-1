@@ -1,30 +1,117 @@
 body {
   -webkit-font-smoothing: antialiased; }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: 'Open Sans', sans-serif !important;
+h1, h2, h3, h4, h5, h6, a {
+  font-family: 'Playfair Display', sans-serif !important;
   font-weight: 700 !important;
-  color: #333333; }
+  color: #000000; }
 
-.col-md-10, .col-md-8 {
+h1 {
+  font-size: 50px; }
+
+h2 {
+  font-size: 40px; }
+
+h3 {
+  font-size: 35px; }
+
+h4 {
+  font-size: 30px; }
+
+h5 {
+  font-size: 25px; }
+
+.big-text {
+  font-size: 3rem;
+  font-family: 'Playfair Display', sans-serif !important;
+  font-weight: 700; }
+
+hr {
+  color: rgba(255, 255, 255, 0.4) !important; }
+
+.col-md-10, .col-md-8, .col-md-6, .col-md-12 {
   margin: 0 auto; }
 
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important; }
+
 .single-column-content, .two-column-content, .three-column-content, .four-column-content {
-  padding: 50px; }
+  padding: 50px;
+  background-size: cover;
+  background-attachment: fixed; }
+  .single-column-content .wpcf7-submit, .two-column-content .wpcf7-submit, .three-column-content .wpcf7-submit, .four-column-content .wpcf7-submit {
+    background: #FFB470;
+    border: 2px solid #FFB470;
+    font-weight: 900;
+    color: #ffffff;
+    width: 100%;
+    transition: ease-in-out 0.4s !important; }
+    .single-column-content .wpcf7-submit:hover, .two-column-content .wpcf7-submit:hover, .three-column-content .wpcf7-submit:hover, .four-column-content .wpcf7-submit:hover {
+      background: #000000 !important;
+      transform: rotate(1deg);
+      border: solid 0 #000000; }
 
 .btn {
-  background: #007bff;
+  background: #000000;
   transition: ease-in-out 0.3s;
-  border: solid 1px #185ebf; }
+  letter-spacing: 2px;
+  border-radius: 0;
+  padding: 15px 40px;
+  font-weight: 900 !important;
+  color: #FFB470 !important;
+  border: none; }
   .btn:hover {
-    background: #185ebf;
+    background: #FFB470;
     transform: rotate(3deg);
-    box-shadow: 0px 10px 8px -5px rgba(0, 0, 0, 0.32); }
+    color: #ffffff !important; }
 
 a {
-  color: #007bff; }
+  color: #FFB470; }
   a:hover {
     text-decoration: none; }
+
+input, textarea {
+  width: 100%;
+  background: #ffffff;
+  padding: 20px 10px;
+  margin-bottom: 10px; }
+
+textarea {
+  min-height: 300px; }
+
+::-webkit-input-placeholder {
+  color: #4f4f4f; }
+
+::-moz-placeholder {
+  color: #4f4f4f; }
+
+:-ms-input-placeholder {
+  color: #4f4f4f; }
+
+::placeholder {
+  color: #4f4f4f; }
+
+.newsletter-signup {
+  margin: 0 auto;
+  text-align: center !important; }
+  .newsletter-signup input {
+    background: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    box-sizing: inherit; }
+  .newsletter-signup .wpcf7-submit {
+    background: #FFB470;
+    border: 2px solid #FFB470;
+    font-weight: 900;
+    color: #ffffff;
+    width: 20%;
+    transition: ease-in-out 0.4s !important; }
+    .newsletter-signup .wpcf7-submit:hover {
+      background: #000000 !important;
+      transform: rotate(3deg);
+      border: solid 0 #000000; }
 
 .jumbotron {
   background-attachment: fixed;
@@ -40,17 +127,67 @@ a {
   .jumbotron .jumbotron-txt-area {
     margin-bottom: 25px; }
 
+.jtrn-newsletter-container {
+  min-height: 100vh;
+  padding-top: 10%;
+  background-size: cover; }
+  .jtrn-newsletter-container .jtrn-content {
+    text-align: center; }
+    .jtrn-newsletter-container .jtrn-content h5 {
+      font-size: 50px;
+      color: #ffffff;
+      font-weight: 800 !important;
+      text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.84);
+      margin-bottom: 25px; }
+    .jtrn-newsletter-container .jtrn-content h1 {
+      font-size: 20px;
+      font-weight: 400 !important; }
+  .jtrn-newsletter-container .jtrn-newsletter {
+    background: #ffffff;
+    margin: 30px auto;
+    margin-bottom: 50px;
+    padding: 20px; }
+    .jtrn-newsletter-container .jtrn-newsletter h4 {
+      margin-bottom: 20px; }
+    .jtrn-newsletter-container .jtrn-newsletter .newsletter-signup {
+      margin: 0 auto;
+      text-align: center; }
+      .jtrn-newsletter-container .jtrn-newsletter .newsletter-signup input {
+        background: #ffffff;
+        padding: 10px;
+        margin-bottom: 10px; }
+      .jtrn-newsletter-container .jtrn-newsletter .newsletter-signup .wpcf7-submit {
+        background: #FFB470;
+        border: 2px solid #FFB470;
+        font-weight: 900;
+        color: #ffffff;
+        transition: ease-in-out 0.4s; }
+
 .card-row {
-  padding: 30px 0; }
+  padding: 90px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center; }
+  .card-row .card-row-intro, .card-row .big-text {
+    color: #ffffff; }
   .card-row .card {
-    overflow: hidden; }
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 0; }
     .card-row .card img {
       transition: ease-out 0.2s; }
       .card-row .card img:hover {
         transform: scale(1.1);
         overflow: hidden; }
     .card-row .card .card-content {
-      padding: 10px; }
+      padding: 30px; }
+      .card-row .card .card-content i.material-icons {
+        font-size: 14px;
+        padding-top: 2px;
+        margin-right: 5px; }
+
+.card:nth-child(1 div.card) {
+  border: solid 5px green; }
 
 .contact-row {
   padding: 5px 10px;
@@ -66,7 +203,7 @@ a {
     text-align: center;
     vertical-align: middle;
     transition: ease-out 0.4s;
-    background: #007bff; }
+    background: #FFB470; }
     .contact-row a i.material-icons:hover {
       color: #ffffff !important;
       font-size: 42px;
@@ -142,7 +279,7 @@ a {
   .newsletter-panel-form .col-md-10 {
     padding: 0; }
   .newsletter-panel-form .wpcf7-submit {
-    background: #007bff;
+    background: #FFB470;
     width: 100%;
     color: #ffffff;
     border-radius: 4px;
@@ -155,6 +292,19 @@ a {
   padding: 30px; }
   .newsletter-text-area p {
     font-size: 13px; }
+
+.fw-newsletter {
+  text-align: center;
+  padding: 100px 0; }
+  .fw-newsletter h2, .fw-newsletter p {
+    color: #ffffff; }
+  .fw-newsletter .fw-form {
+    margin: 30px 0; }
+    .fw-newsletter .fw-form input {
+      width: 80%;
+      box-sizing: inherit; }
+    .fw-newsletter .fw-form .wpcf7-submit {
+      width: 20%; }
 
 .statement {
   background-size: cover;
@@ -175,39 +325,180 @@ a {
       padding: 20px;
       background-color: #ffffff; }
       .testimonial-row .testimonial-card .t-inner .client-name {
-        color: #007bff; }
+        color: #FFB470; }
 
 .carousel .slick-slide .item img {
   width: 100%; }
 
+.event-banner {
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #000000;
+  margin: 0 0 15px 0;
+  padding: 40px 20px; }
+  .event-banner .small-date {
+    background-color: rgba(0, 0, 0, 0.1);
+    padding-top: 5px;
+    width: 70px;
+    height: 65px;
+    text-align: center;
+    line-height: 1px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 30px; }
+    .event-banner .small-date h3 {
+      font-size: 22px;
+      border-bottom: solid 1px #ffffff;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      color: #727272; }
+    .event-banner .small-date p {
+      font-size: 12px;
+      font-weight: 800;
+      color: #727272; }
+  .event-banner h1 {
+    font-size: 30px; }
+
+.event-bottom .left .logo-event img {
+  width: 60%;
+  margin: 20px 0; }
+
+.event-bottom .right {
+  padding: 40px; }
+  .event-bottom .right .ticket-tape {
+    background: #eeeeee;
+    padding: 05px;
+    margin: 0 0 20px 0; }
+    .event-bottom .right .ticket-tape i.material-icons {
+      font-size: 15px;
+      vertical-align: middle;
+      display: inline-block;
+      color: #26007b;
+      border: 1px solid #26007b;
+      border-radius: 20px;
+      padding: 3px;
+      margin: 0 10px 0 10px; }
+    .event-bottom .right .ticket-tape p {
+      font-size: 14px;
+      margin-bottom: 0;
+      display: inline-block;
+      font-weight: 700; }
+
+.nav-bg {
+  background-image: url("http://themetwo.test/wp-content/uploads/2018/06/cardbg.jpg");
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 80px; }
+  .nav-bg .big-text {
+    color: #ffffff; }
+
+.ticket-title h3 {
+  font-size: 20px;
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px; }
+
+.cta-section {
+  padding: 80px 0; }
+  .cta-section .cta-img {
+    text-align: right; }
+    .cta-section .cta-img img {
+      max-height: 400px; }
+  .cta-section .cta-col-2 {
+    padding: 50px 0; }
+    .cta-section .cta-col-2 h2 {
+      font-size: 3rem; }
+    .cta-section .cta-col-2 p {
+      width: 400px; }
+
+.video-container {
+  padding: 100px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  text-align: center; }
+  .video-container .video-controls {
+    padding: 50px 30px; }
+    .video-container .video-controls h2 {
+      color: #ffffff;
+      margin-bottom: 25px; }
+    .video-container .video-controls .video-button i.material-icons {
+      font-size: 4rem;
+      color: #ffffff;
+      border: 1px solid #ffffff;
+      border-radius: 50px;
+      transition: ease-in-out 0.4s;
+      margin: 20px; }
+      .video-container .video-controls .video-button i.material-icons:hover {
+        transform: rotate(20deg); }
+  .video-container .mfp-hide {
+    display: none !important; }
+
+.video-align {
+  text-align: center; }
+
+.mfp-close {
+  opacity: 1 !important;
+  color: #fff !important;
+  background: black !important;
+  transition: ease-in-out 1s;
+  border-radius: 30px;
+  left: 80% !important; }
+  .mfp-close:hover {
+    box-shadow: inset 2px -1px 60px 82px white;
+    color: #000000 !important;
+    transform: rotate(180deg); }
+
+.hr-container {
+  padding: 0; }
+  .hr-container .col-md-6 {
+    padding-right: 0;
+    padding-left: 0; }
+  .hr-container .hr-col-1 {
+    padding: 100px 30px 100px 100px; }
+    @media only screen and (max-width: 1000px) {
+      .hr-container .hr-col-1 {
+        padding: 30px; } }
+    .hr-container .hr-col-1 .big-text {
+      color: #ffffff;
+      margin-bottom: 4px !important; }
+    .hr-container .hr-col-1 h3 {
+      color: #FFB470; }
+  .hr-container .hr-col-2 {
+    text-align: right;
+    background-size: cover;
+    background-repeat: none; }
+    .hr-container .hr-col-2 img {
+      width: 100%; }
+
 .social-banner {
-  background: #007bff;
+  background: #000000;
   padding: 20px 0 10px 0; }
   .social-banner .social-text {
     text-align: left; }
     .social-banner .social-text p {
       font-size: 18px;
-      color: #ffffff;
+      color: #FFB470;
       vertical-align: middle; }
   .social-banner .social-icons {
     text-align: right; }
     .social-banner .social-icons .svg-inline--fa {
       font-size: 20px;
       vertical-align: middle;
-      color: #ffffff;
+      color: #FFB470;
       margin: 5px 15px;
       transition: ease-in-out 0.5s; }
       .social-banner .social-icons .svg-inline--fa:hover {
         transform: rotate(24deg);
-        color: #000000; }
+        color: #ffffff; }
 
 .footer {
-  background: #000000;
+  background: #ffffff;
   padding: 40px 20px; }
   .footer p {
     color: #ffffff; }
   .footer a {
-    color: #007bff; }
+    color: #000000; }
   .footer .col-md-2, .footer .col-md-4 {
     text-align: center;
     vertical-align: middle; }
@@ -216,22 +507,39 @@ a {
     opacity: 0.5; }
 
 .navbar {
-  padding: 10px; }
+  padding: 10px 40px;
+  background: rgba(0, 0, 0, 0.2);
+  transition: ease-in-out 0.3; }
+  .navbar li {
+    padding: 0 15px; }
+    .navbar li a {
+      letter-spacing: 1px; }
   .navbar .navbar-brand {
     max-width: 250px; }
     .navbar .navbar-brand img {
       width: 100%; }
   .navbar .dropdown-menu {
     margin-top: 22px;
-    width: 100%;
-    background-color: #000000; }
-    .navbar .dropdown-menu a {
-      color: #ffffff; }
+    background-color: #26007b;
+    border: solid 2px #ffffff;
+    position: auto; }
+    .navbar .dropdown-menu li {
+      padding: 0; }
+      .navbar .dropdown-menu li:hover {
+        background: #FFB470; }
+      .navbar .dropdown-menu li a {
+        color: #ffffff;
+        font-weight: 800; }
+    .navbar .dropdown-menu .dropdown-item:hover {
+      background: #000000; }
 
 .dark-nav {
-  background-color: #000000 !important; }
+  background-color: #ffffff !important;
+  padding: 20px 0; }
   .dark-nav a {
-    color: #007bff; }
+    color: #000000;
+    font-weight: 400 !important;
+    letter-spacing: 1px; }
 
 .navbar-margin-top {
   margin-top: 35px; }
