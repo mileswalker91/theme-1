@@ -1,0 +1,66 @@
+.video-container {
+  padding: 100px 0;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+  text-align: center;
+
+  .video-controls {
+
+    padding: 50px 30px;
+
+
+  h2 {
+    color: #ffffff;
+    margin-bottom: 25px;
+
+  }
+
+  .video-button {
+
+    i.material-icons {
+      font-size: 4rem;
+      color: $white;
+      border: 1px solid $white;
+      border-radius: 50px;
+      transition: ease-in-out 0.4s;
+      margin: 20px;
+
+      &:hover {
+        transform: rotate(20deg);
+      }
+    }
+  }
+
+
+}
+
+
+
+  .mfp-hide {
+      display: none!important;
+    }
+
+
+
+
+}
+
+.video-align {
+  text-align: center;
+}
+
+.mfp-close {
+  opacity: 1 !important;
+  color: #fff !important;
+  background: rgba(0, 0, 0, 1)!important;
+  transition: ease-in-out 1s;
+  border-radius: 30px;
+  left: 80% !important;
+   &:hover {
+     box-shadow: inset 2px -1px 60px 82px rgba(255,255,255,1);
+     color: #000000 !important;
+     transform: rotate(180deg);
+
+   }
+}

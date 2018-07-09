@@ -1,0 +1,116 @@
+.event-banner {
+  border-bottom: 1px solid #e3e3e3;
+  border-top: 1px solid #000000;
+  margin: 0 0 15px 0;
+  padding: 40px 20px;
+
+
+
+
+  .small-date {
+    background-color: rgba($black, 0.1);
+    padding-top: 5px;
+    width: 70px;
+    height: 65px;
+    text-align: center;
+    line-height: 1px;
+    border-radius: 4px;
+    float: left;
+    margin-right: 30px;
+
+
+    h3{
+      font-size: 22px;
+      border-bottom: solid 1px $white;
+      margin-bottom: 10px;
+      padding-bottom: 10px;
+      color: #727272;
+    }
+
+    p {
+      font-size: 12px;
+      font-weight: 800;
+      color: #727272;
+    }
+  }
+
+
+  h1 {
+    font-size: 30px;
+  }
+
+
+}
+
+.event-bottom {
+
+  .left{
+
+  .logo-event {
+
+    img {
+      width: 60%;
+      margin: 20px 0;
+    }
+  }
+
+}
+
+  .right {
+    padding: 40px;
+
+    .ticket-tape {
+      background: $light-grey;
+      padding: 05px;
+      margin: 0 0 20px 0;
+
+      i.material-icons {
+        font-size: 15px;
+        vertical-align: middle;
+        display: inline-block;
+        color: $secondary-color;
+        border: 1px solid $secondary-color;
+        border-radius: 20px;
+        padding: 3px;
+        margin:0 10px 0 10px;
+      }
+
+
+      p {
+        font-size: 14px;
+        margin-bottom: 0;
+        display: inline-block;
+        font-weight: 700;
+      }
+    }
+
+
+
+}
+
+
+}
+
+.nav-bg {
+  background-image: url('http://themetwo.test/wp-content/uploads/2018/06/cardbg.jpg');
+  height: 200px;
+  background-size: cover;
+  background-attachment: fixed;
+  text-align: center;
+  padding-top: 80px;
+
+  .big-text {
+    color:$white;
+  }
+
+
+}
+
+.ticket-title {
+    h3 {
+
+      font-size: 20px;
+      border-bottom: 1px solid #e3e3e3;
+      padding: 10px;
+    }
+  }
