@@ -1,0 +1,31 @@
+.tile-row {
+margin: 0;
+padding: 0;
+
+
+  .tile{
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    transition: ease-in-out 0.4s;
+
+
+
+    &:hover {
+      box-shadow: inset 0px 0px 40px -1px rgba(0,0,0,0.2);
+    }
+
+    .inner-border {
+
+    }
+
+    img {
+
+      &:hover {
+        transform: scale(1.5);
+      }
+    }
+
+  }
+
+}

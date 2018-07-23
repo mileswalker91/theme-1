@@ -113,6 +113,11 @@ textarea {
       transform: rotate(3deg);
       border: solid 0 #000000; }
 
+.logo {
+  margin-left: 10px; }
+  .logo img {
+    max-height: 80px !important; }
+
 .jumbotron {
   background-attachment: fixed;
   background-position: 50% 80%;
@@ -449,6 +454,22 @@ textarea {
     color: #000000 !important;
     transform: rotate(180deg); }
 
+.carousel .carousel-inner .carousel-item .bg-slide {
+  background-size: cover;
+  background-position: center center; }
+  .carousel .carousel-inner .carousel-item .bg-slide .caption-container {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    bottom: 0px;
+    z-index: 10;
+    text-align: center;
+    width: 100%; }
+    .carousel .carousel-inner .carousel-item .bg-slide .caption-container .carousel-caption {
+      position: relative;
+      right: 0;
+      left: 0;
+      padding-bottom: 0; }
+
 .hr-container {
   padding: 0; }
   .hr-container .col-md-6 {
@@ -470,6 +491,19 @@ textarea {
     background-repeat: none; }
     .hr-container .hr-col-2 img {
       width: 100%; }
+
+.tile-row {
+  margin: 0;
+  padding: 0; }
+  .tile-row .tile {
+    background-size: cover;
+    background-position: center center;
+    padding: 40px;
+    transition: ease-in-out 0.4s; }
+    .tile-row .tile:hover {
+      box-shadow: inset 0px 0px 40px -1px rgba(0, 0, 0, 0.2); }
+    .tile-row .tile img:hover {
+      transform: scale(1.5); }
 
 .social-banner {
   background: #000000;
@@ -503,7 +537,7 @@ textarea {
     text-align: center;
     vertical-align: middle; }
   .footer .footer-logo img {
-    max-width: 150px;
+    max-width: 50px;
     opacity: 0.5; }
 
 .navbar {
@@ -515,9 +549,10 @@ textarea {
     .navbar li a {
       letter-spacing: 1px; }
   .navbar .navbar-brand {
-    max-width: 250px; }
+    max-width: 250px;
+    max-height: 250px; }
     .navbar .navbar-brand img {
-      width: 100%; }
+      height: 100%; }
   .navbar .dropdown-menu {
     margin-top: 22px;
     background-color: #26007b;
@@ -535,11 +570,13 @@ textarea {
 
 .dark-nav {
   background-color: #ffffff !important;
-  padding: 20px 0; }
+  padding: 10px 0; }
   .dark-nav a {
     color: #000000;
     font-weight: 400 !important;
     letter-spacing: 1px; }
+  .dark-nav .logo img {
+    max-height: 60px !important; }
 
 .navbar-margin-top {
   margin-top: 35px; }

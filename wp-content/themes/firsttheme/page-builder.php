@@ -148,6 +148,94 @@ if( get_row_layout() == 'gallery_carousel' )
 						if( get_row_layout() == 'hero_right' )
 							get_template_part('template-parts/hero/hero-right');
 
+							if( get_row_layout() == 'hero_left' )
+								get_template_part('template-parts/hero/hero-left');
+
+
+							?>
+
+
+
+							<?php	if( get_row_layout() == 'slider' )
+								// check if the nested repeater field has rows of data
+        				if( have_rows('slider_container') ):
+									?>
+
+									<div id="carouselExampleControls" class="carousel slide" data-ride="carousel" style="">
+  								<div class="carousel-inner">
+
+
+
+
+										<?php $i = 0; ?>
+				         <?php while( have_rows('slider_container') ) : the_row(); ?>
+				             <div class="carousel-item <?php echo $i==0 ? 'active' : ''; $i++; ?>" style="background-image:(<?php the_sub_field('slide_image'); ?>);">
+
+												 <div class="bg-slide" style="background-image:url(<?php the_sub_field('slide_image'); ?>);height:<?php the_field('slide_height', 'option'); ?>vh; ">
+													 <div class="caption-container">
+													 <div class="carousel-caption">
+							 						 <p><?php the_sub_field('slider_caption'); ?></p>
+													</div>
+												</div>
+
+												 </div>
+
+				             </div>
+
+				<?php endwhile; ?>
+
+			</div>
+	  <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+	    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Previous</span>
+	  </a>
+	  <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+	    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+	    <span class="sr-only">Next</span>
+	  </a>
+	</div>
+
+
+<?php endif; ?>
+
+	<?php if( get_row_layout() == 'tile_row' )
+		get_template_part('template-parts/tiles-cards/tiles-row');?>
+
+
+		<?php	if( get_row_layout() == 'tiles' )
+			// check if the nested repeater field has rows of data
+			if( have_rows('tile_container') ):?>
+
+
+
+
+			<div class="container-fluid tile-row" style="background-color:<?php the_field('tile_row_bg', 'option'); ?>; background-image: url(<?php the_field('tile_row_bg_image', 'option'); ?>);">
+
+				<div class="row">
+
+
+
+
+<?php while ( have_rows('tile_container') ) : the_row(); ?>
+
+<div class="col-md-3 tile" style="background-color:<?php the_sub_field('tile_color'); ?>; background-image:url(<?php the_sub_field('tile_image'); ?>);">
+
+<div class="inner-border"><?php the_sub_field('tile_content'); ?><div class="box"></div></div>
+</div>
+
+<?php endwhile; ?>
+
+
+</div>
+</div>
+
+
+<?php endif;
+
+
+
+
+
 
 
 
