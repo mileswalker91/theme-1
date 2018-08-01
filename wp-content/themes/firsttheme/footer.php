@@ -17,8 +17,8 @@
 
       <div class="col-md-2 footer-logo"><img src="<?php the_field('theme_logo', 'option'); ?>" /></div>
           <div class="col-md-2"><p>Property Devlopers</p></div>
-      <div class="col-md-2"><p>View Our <a href="#">Data Policy</a></p></div>
-      <div class="col-md-2"><p><a href="#">Contact us</a>now</p></div>
+      <div class="col-md-2"><p><a href="#">Data Policy</a></p></div>
+      <div class="col-md-2"><p><a href="#">Contact us</a></p></div>
       <div class="col-md-4 designed-by">Website Designed By <a href="">GITCRAKIN</a></div>
 
   </div>

@@ -25,10 +25,12 @@
 
 	<nav class="navbar navbar-fluid navbar-expand-lg  fixed-top navbar-dark">
 
-		<a class="navbar-brand logo" href="http://wordpress.test"><img src="<?php the_field('theme_logo', 'option'); ?>" /></a>
+		<a class="navbar-brand logo" href="<?php echo get_option("siteurl"); ?>"><img src="<?php the_field('theme_logo', 'option'); ?>" /></a>
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggler ml-auto" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-					<span class="navbar-toggler-icon "></span>
+					<span class="navbar-toggler-icon"><i class="material-icons">
+menu
+</i></span>
 				</button>
 			</div>
 

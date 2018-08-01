@@ -58,17 +58,31 @@
         text-align: center;
 
         input {
-          background: $white;
+          border: none;
+          border-radius: 0;
+        }
+
+        input {
+          background: $input-bg;
           padding: 10px;
           margin-bottom: 10px;
+          border: $input-border;
+          border-radius: $input-border-radius;
         }
 
         .wpcf7-submit {
-          background: $primary-color;
-          border: 2px solid $primary-color;
+          background: $submit-bg;
+          border: $submit-border;
           font-weight: 900;
-          color: $white;
+          color: $submit-col;
           transition: ease-in-out 0.4s;
+          border-radius: $submit-border-radius;
+
+          &:hover {
+            background: $submit-bg-hover;
+            border: $submit-border-hover;
+            color: $submit-col-hover;
+          }
         }
       }
 

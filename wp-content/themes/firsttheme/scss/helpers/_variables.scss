@@ -6,9 +6,10 @@ $dark-grey: #212121;
 $dark-md-grey:#0f0f0f;
 $primary-color: #FFB470;
 $primary-shade: #185ebf;
-$medium-grey: #353535;
+$medium-grey: #cccccc;
 $light-grey: #eeeeee;
-$secondary-color: #26007b;
+$secondary-color: #000000;
+$blue-link: #0099ff;
 
 
 
@@ -20,3 +21,59 @@ $p-black: #333333;
 //Shapes
 $curved-border: 6px;
 $rectangle-border: 0;
+
+//contact forms
+$input-border-radius: 0px;
+$input-bg: $white;
+$input-border: 1px solid $medium-grey;
+$submit-border-radius: 0px;
+$submit-bg: #FFB470;
+$submit-col: $white;
+$submit-col-hover: $primary-color;
+$submit-border: 1px solid #FFB470;
+$submit-bg-hover: $black;
+$submit-border-hover: 1px solid $black;
+$placeholder-col: $dark-grey;
+
+
+//buttons
+$btn-padding: 15px 40px;
+$btn-border: 1px solid transparent;
+$btn-border-radius:0px ;
+$btn-letter: 2px;
+$btn-font-weight: 900;
+//primary
+$btn-p-bg: $secondary-color;
+$btn-p-bg-hover: $primary-color;
+$btn-p-col: $primary-color;
+$btn-p-col-hover: $white;
+$burger-col: #000000;
+
+//playbutton
+$play-bg: transparent ;
+$play-bg-hover: $black;
+$play-border: 1px solid $white;
+$play-font-size: 3rem;
+$play-border-radius: 50px;
+
+
+//mobile
+$body-paddin-top: 74px;
+
+//navigation
+$ns1-bg: transparent;
+$ns2-bg: $white;
+$ns1-padding: 10px 40px;
+$ns2-padding: 10px;
+$ns1-link-col: $white;
+$ns1-link-col-hover: rgba($white, 0.5);
+$ns2-link-col: $black;
+$ns2-link-col-hover: $blue-link;
+$nav-link-ls: 2px;
+$nav-link-size: 16px;
+$nav-link-weight: 400;
+$nav-link-font: 'Playfair Display', sans-serif;
+$logo-size: 100px !important;
+$logo-size-s2: 60px !important;
+$ns2-margin-right: 10px;
+$nav-margin-top-fixed: 35px;

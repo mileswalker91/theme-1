@@ -9,6 +9,9 @@
         color: $primary-color;
         vertical-align: middle;
       }
+      @media only screen and (max-width: 761px) {
+        text-align: center;
+      }
     }
 
   .social-icons {
@@ -28,6 +31,10 @@
     }
 
     }
+
+    @media only screen and (max-width: 761px) {
+      text-align: center;
+    }
   }
 
 }
@@ -37,23 +44,31 @@ background: $white;
 padding: 40px 20px;
 
   p{
-    color: $white;
+    color: $black;
   }
 
   a {
-    color: $black;
+    color: $blue-link;
   }
 
     .col-md-2, .col-md-4 {
       text-align: center;
       vertical-align: middle;
+
+      @media only screen and (max-width: 761px) {
+        text-align: center;
+      }
     }
 
     .footer-logo {
 
         img {
           max-width: 50px;
-          opacity: 0.5;
+          opacity: 1;
+        }
+
+        @media only screen and (max-width: 761px) {
+          text-align: center;
         }
     }
 

@@ -19,15 +19,17 @@
   .video-button {
 
     i.material-icons {
-      font-size: 4rem;
+      font-size: $play-font-size;
       color: $white;
-      border: 1px solid $white;
-      border-radius: 50px;
+      border: $play-border;
+      border-radius: $play-border-radius;
+      background: $play-bg-hover;
       transition: ease-in-out 0.4s;
       margin: 20px;
 
       &:hover {
         transform: rotate(20deg);
+        background: $play-bg-hover;
       }
     }
   }

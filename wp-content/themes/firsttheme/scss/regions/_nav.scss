@@ -1,7 +1,12 @@
 .navbar {
-  padding: 10px 40px;
-  background: rgba(0,0,0, 0.2);
+  padding: $ns1-padding;
+  background: $ns1-bg;
   transition: ease-in-out 0.3;
+
+  @media only screen and (max-width: 1024px) {
+    background: $white;
+    padding: 2px;
+  }
 
   li {
     padding: 0 15px;
@@ -11,13 +16,23 @@
     }
   }
 
-  //logo
-  .navbar-brand {
-    max-width: 250px;
-    max-height: 250px;
-    img {
-      height: 100%;
+  .navbar-toggler-icon {
+    background-image: none;
+    opacity: 1;
+    color: $burger-col;
+
+    i.material-icons {
+      font-size: 1.5rem;
     }
+  }
+
+  //logo
+  .logo {
+
+
+    img{
+    max-height: $logo-size;
+  }
   }
 
   .dropdown-menu {
@@ -52,20 +67,25 @@
   background-color: $white !important;
   padding: 10px 0;
 
+  @media only screen and (max-width: 1024px) {
+    padding: 2px;
+  }
+
   a{
-    color: $black;
-    font-weight: 400!important;
-    letter-spacing: 1px;
+    color: $ns2-link-col;
+    font-weight: $ns2-link-col-hover !important;
+    letter-spacing: $nav-link-ls;
   }
 
   .logo {
+    margin-left: 10px;
 
     img {
-      max-height: 60px !important;
+      max-height: $logo-size-s2;
     }
   }
 }
 
 .navbar-margin-top {
-  margin-top: 35px;
+  margin-top: $nav-margin-top-fixed ;
 }
